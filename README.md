@@ -18,13 +18,13 @@ The system ensures no race conditions occur when multiple cars and pumps operate
 ### 1. ServiceStation (Main Class)
 - Creates and starts the Car (producers) and Pump (consumers) threads.
 - Manages shared resources like:
-       - Waiting queue
-       - Semaphores (empty, full, mutex)
+  - Waiting queue
+  - Semaphores (empty, full, mutex)
 ### 2. Semaphore
 - Custom semaphore implementation (without using Java’s built-in classes).
 - Provides:
-       - P() → Wait / acquire
-       - V() → Signal / release
+  - P() → Wait / acquire
+  - V() → Signal / release
 ### 3. Car (Producer)
 - Represents a car arriving at the station.
 - Waits if the queue is full.
